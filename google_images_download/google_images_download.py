@@ -404,7 +404,7 @@ class googleimagesdownload:
         main = data[3]
         info = data[9]
         if info is None:
-            info = data[11]
+            info = data[23] # Change to correct index to extract info from data; look for keywords 2003 and its index, which should be a dict
         formatted_object = {}
         try:
             formatted_object['image_height'] = main[2]
